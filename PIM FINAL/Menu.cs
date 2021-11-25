@@ -98,5 +98,12 @@ namespace PIM_FINAL
         {
             this.Close();
         }
+
+        private void btnRelatório_Click(object sender, EventArgs e)
+        {
+            Relatório relatório = new Relatório();
+            relatório.ShowDialog();
+
+        }
     }
 }

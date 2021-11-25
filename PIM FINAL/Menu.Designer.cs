@@ -35,6 +35,7 @@ namespace PIM_FINAL
             this.btnRegistrarReserva = new System.Windows.Forms.Button();
             this.btnDeslogar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRelatório = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,11 +46,11 @@ namespace PIM_FINAL
             this.btnConsultarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarReserva.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConsultarReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnConsultarReserva.Location = new System.Drawing.Point(330, 249);
+            this.btnConsultarReserva.Location = new System.Drawing.Point(329, 216);
             this.btnConsultarReserva.Name = "btnConsultarReserva";
             this.btnConsultarReserva.Size = new System.Drawing.Size(201, 45);
             this.btnConsultarReserva.TabIndex = 1;
-            this.btnConsultarReserva.Text = "Consultar Reservas";
+            this.btnConsultarReserva.Text = "Administrar Reservas";
             this.btnConsultarReserva.UseVisualStyleBackColor = false;
             this.btnConsultarReserva.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -60,7 +61,7 @@ namespace PIM_FINAL
             this.btnAdministrarHospede.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrarHospede.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdministrarHospede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnAdministrarHospede.Location = new System.Drawing.Point(576, 249);
+            this.btnAdministrarHospede.Location = new System.Drawing.Point(575, 216);
             this.btnAdministrarHospede.Name = "btnAdministrarHospede";
             this.btnAdministrarHospede.Size = new System.Drawing.Size(201, 45);
             this.btnAdministrarHospede.TabIndex = 4;
@@ -75,11 +76,11 @@ namespace PIM_FINAL
             this.btnCadastrarHospede.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarHospede.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCadastrarHospede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCadastrarHospede.Location = new System.Drawing.Point(576, 136);
+            this.btnCadastrarHospede.Location = new System.Drawing.Point(575, 103);
             this.btnCadastrarHospede.Name = "btnCadastrarHospede";
             this.btnCadastrarHospede.Size = new System.Drawing.Size(201, 45);
             this.btnCadastrarHospede.TabIndex = 3;
-            this.btnCadastrarHospede.Text = "Cadastro de Hóspedes";
+            this.btnCadastrarHospede.Text = "Cadastrar Hóspede";
             this.btnCadastrarHospede.UseVisualStyleBackColor = false;
             this.btnCadastrarHospede.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -90,11 +91,11 @@ namespace PIM_FINAL
             this.btnRegistrarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarReserva.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegistrarReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnRegistrarReserva.Location = new System.Drawing.Point(330, 136);
+            this.btnRegistrarReserva.Location = new System.Drawing.Point(329, 103);
             this.btnRegistrarReserva.Name = "btnRegistrarReserva";
             this.btnRegistrarReserva.Size = new System.Drawing.Size(201, 45);
             this.btnRegistrarReserva.TabIndex = 2;
-            this.btnRegistrarReserva.Text = "Registrar Reservas";
+            this.btnRegistrarReserva.Text = "Registrar Reserva";
             this.btnRegistrarReserva.UseVisualStyleBackColor = false;
             this.btnRegistrarReserva.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -104,7 +105,7 @@ namespace PIM_FINAL
             this.btnDeslogar.FlatAppearance.BorderSize = 0;
             this.btnDeslogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeslogar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDeslogar.Location = new System.Drawing.Point(703, 402);
+            this.btnDeslogar.Location = new System.Drawing.Point(701, 401);
             this.btnDeslogar.Name = "btnDeslogar";
             this.btnDeslogar.Size = new System.Drawing.Size(87, 28);
             this.btnDeslogar.TabIndex = 5;
@@ -122,12 +123,28 @@ namespace PIM_FINAL
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // btnRelatório
+            // 
+            this.btnRelatório.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(162)))), ((int)(((byte)(222)))));
+            this.btnRelatório.FlatAppearance.BorderSize = 0;
+            this.btnRelatório.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatório.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRelatório.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnRelatório.Location = new System.Drawing.Point(445, 300);
+            this.btnRelatório.Name = "btnRelatório";
+            this.btnRelatório.Size = new System.Drawing.Size(201, 45);
+            this.btnRelatório.TabIndex = 7;
+            this.btnRelatório.Text = "Relatórios";
+            this.btnRelatório.UseVisualStyleBackColor = false;
+            this.btnRelatório.Click += new System.EventHandler(this.btnRelatório_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(802, 451);
+            this.Controls.Add(this.btnRelatório);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnDeslogar);
             this.Controls.Add(this.btnRegistrarReserva);
@@ -150,5 +167,6 @@ namespace PIM_FINAL
         private System.Windows.Forms.Button btnRegistrarReserva;
         private System.Windows.Forms.Button btnDeslogar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRelatório;
     }
 }

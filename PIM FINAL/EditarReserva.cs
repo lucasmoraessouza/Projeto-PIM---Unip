@@ -26,7 +26,7 @@ namespace PIM_FINAL
 
         private void CalcularValorTotal()
         {
-            labelValorTotalReserva.Text = (datapickerAtualizarSaida.Value.Subtract(datapickerAtualizarEntrada.Value).Days * valorTotal).ToString();
+            labelValorTotalReserva.Text = (datapickerAtualizarSaida.Value.Subtract(datapickerAtualizarEntrada.Value).Days * valorTotal).ToString("C");
         }
 
         private void btnEditarReserva_Click(object sender, EventArgs e)
@@ -35,6 +35,9 @@ namespace PIM_FINAL
             DataTable infoReservas = reservas.ListarReservasPorId(idReserva);
             DateTime dateSaida = datapickerAtualizarSaida.Value;
             DateTime dateEntrada = datapickerAtualizarEntrada.Value;
+
+            float valor = float.Parse(infoReservas.Rows[0]["valor"].ToString());
+            float valorTotal = (datapickerAtualizarSaida.Value.Subtract(datapickerAtualizarEntrada.Value).Days * valor);
 
             int dias = dateSaida.Subtract(dateEntrada).Days;
 
@@ -49,7 +52,7 @@ namespace PIM_FINAL
             }
             else
             {
-                reservas.AtualizarReserva(idReserva, comboBoxAtualizarQuartos.Text, datapickerAtualizarEntrada.Value, datapickerAtualizarSaida.Value);
+                reservas.AtualizarReserva(idReserva, comboBoxAtualizarQuartos.Text, datapickerAtualizarEntrada.Value, datapickerAtualizarSaida.Value, valorTotal);
                 MessageBox.Show(reservas.mensagem);
 
                 consultarReserva.PreencherDatagrid();
@@ -84,8 +87,8 @@ namespace PIM_FINAL
                 datapickerAtualizarEntrada.Value = dateEntrada;
 
                 float valor = float.Parse(infoReservas.Rows[0]["valor"].ToString());
-                labelValorQuarto.Text = valor.ToString();
-                labelValorTotalReserva.Text = (dateSaida.Subtract(dateEntrada).Days * valor).ToString();
+                labelValorQuarto.Text = valor.ToString("C");
+                labelValorTotalReserva.Text = (dateSaida.Subtract(dateEntrada).Days * valor).ToString("C");
 
                 valorTotal = valor;
 

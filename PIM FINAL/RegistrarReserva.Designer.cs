@@ -55,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(260, 28);
+            this.label1.Location = new System.Drawing.Point(260, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(280, 45);
             this.label1.TabIndex = 0;
@@ -66,33 +66,33 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(528, 223);
+            this.label3.Location = new System.Drawing.Point(528, 203);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.Size = new System.Drawing.Size(75, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Nº Quarto";
+            this.label3.Text = "Quarto Nº:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(668, 164);
+            this.label4.Location = new System.Drawing.Point(668, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.Size = new System.Drawing.Size(96, 17);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Data Saída";
+            this.label4.Text = "Data de saída:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(528, 164);
+            this.label5.Location = new System.Drawing.Point(527, 144);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 17);
+            this.label5.Size = new System.Drawing.Size(111, 17);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Data de entrada";
+            this.label5.Text = "Data de entrada:";
             // 
             // btnReservar
             // 
@@ -102,11 +102,11 @@
             this.btnReservar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReservar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnReservar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnReservar.Location = new System.Drawing.Point(556, 359);
+            this.btnReservar.Location = new System.Drawing.Point(556, 339);
             this.btnReservar.Name = "btnReservar";
             this.btnReservar.Size = new System.Drawing.Size(186, 28);
             this.btnReservar.TabIndex = 7;
-            this.btnReservar.Text = "Realizar Reserva";
+            this.btnReservar.Text = "Efetuar Reserva";
             this.btnReservar.UseVisualStyleBackColor = false;
             this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
             // 
@@ -117,7 +117,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.button2.Location = new System.Drawing.Point(701, 408);
+            this.button2.Location = new System.Drawing.Point(701, 401);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 28);
             this.button2.TabIndex = 8;
@@ -137,7 +137,7 @@
             this.datapickerSaida.CustomFormat = "dd/MM/yyyy";
             this.datapickerSaida.Enabled = false;
             this.datapickerSaida.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datapickerSaida.Location = new System.Drawing.Point(668, 184);
+            this.datapickerSaida.Location = new System.Drawing.Point(668, 164);
             this.datapickerSaida.Name = "datapickerSaida";
             this.datapickerSaida.Size = new System.Drawing.Size(108, 23);
             this.datapickerSaida.TabIndex = 5;
@@ -148,7 +148,7 @@
             this.datapickerEntrada.CustomFormat = "dd/MM/yyyy";
             this.datapickerEntrada.Enabled = false;
             this.datapickerEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datapickerEntrada.Location = new System.Drawing.Point(528, 184);
+            this.datapickerEntrada.Location = new System.Drawing.Point(528, 164);
             this.datapickerEntrada.Name = "datapickerEntrada";
             this.datapickerEntrada.Size = new System.Drawing.Size(108, 23);
             this.datapickerEntrada.TabIndex = 4;
@@ -161,9 +161,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(39, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 17);
+            this.label2.Size = new System.Drawing.Size(108, 17);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Buscar por hóspede";
+            this.label2.Text = "Buscar hóspede:";
             // 
             // btnBuscarHospede
             // 
@@ -233,7 +233,7 @@
             "8",
             "9",
             "10"});
-            this.comboBoxQuartos.Location = new System.Drawing.Point(529, 246);
+            this.comboBoxQuartos.Location = new System.Drawing.Point(529, 226);
             this.comboBoxQuartos.Name = "comboBoxQuartos";
             this.comboBoxQuartos.Size = new System.Drawing.Size(247, 23);
             this.comboBoxQuartos.TabIndex = 6;
@@ -244,40 +244,41 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(527, 289);
+            this.label7.Location = new System.Drawing.Point(529, 274);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 21);
+            this.label7.Size = new System.Drawing.Size(54, 21);
             this.label7.TabIndex = 25;
-            this.label7.Text = "Valor do quarto:";
+            this.label7.Text = "Diária:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(529, 324);
+            this.label8.Location = new System.Drawing.Point(529, 304);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 21);
+            this.label8.Size = new System.Drawing.Size(45, 21);
             this.label8.TabIndex = 26;
-            this.label8.Text = "Valor total:";
+            this.label8.Text = "Total:";
             // 
             // labelValorQuarto
             // 
             this.labelValorQuarto.AutoSize = true;
             this.labelValorQuarto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelValorQuarto.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelValorQuarto.Location = new System.Drawing.Point(657, 294);
+            this.labelValorQuarto.Location = new System.Drawing.Point(657, 274);
             this.labelValorQuarto.Name = "labelValorQuarto";
             this.labelValorQuarto.Size = new System.Drawing.Size(19, 21);
             this.labelValorQuarto.TabIndex = 27;
             this.labelValorQuarto.Text = "0";
+            this.labelValorQuarto.Click += new System.EventHandler(this.labelValorQuarto_Click);
             // 
             // labelValorTotalReserva
             // 
             this.labelValorTotalReserva.AutoSize = true;
             this.labelValorTotalReserva.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelValorTotalReserva.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelValorTotalReserva.Location = new System.Drawing.Point(657, 324);
+            this.labelValorTotalReserva.Location = new System.Drawing.Point(657, 304);
             this.labelValorTotalReserva.Name = "labelValorTotalReserva";
             this.labelValorTotalReserva.Size = new System.Drawing.Size(19, 21);
             this.labelValorTotalReserva.TabIndex = 28;

@@ -46,11 +46,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(227, 19);
+            this.label4.Location = new System.Drawing.Point(236, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(350, 45);
+            this.label4.Size = new System.Drawing.Size(323, 45);
             this.label4.TabIndex = 7;
-            this.label4.Text = "CONSULTAR RESERVA";
+            this.label4.Text = "Administrar Reserva";
             // 
             // button2
             // 
@@ -74,9 +74,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(37, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 17);
+            this.label1.Size = new System.Drawing.Size(110, 17);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Buscar por nome";
+            this.label1.Text = "Buscar Hóspede:";
             // 
             // txbBuscarNome
             // 
@@ -150,7 +150,7 @@
             this.btnDeletarReserva.Name = "btnDeletarReserva";
             this.btnDeletarReserva.Size = new System.Drawing.Size(127, 28);
             this.btnDeletarReserva.TabIndex = 4;
-            this.btnDeletarReserva.Text = "Deletar Reserva";
+            this.btnDeletarReserva.Text = "Cancelar Reserva";
             this.btnDeletarReserva.UseVisualStyleBackColor = false;
             this.btnDeletarReserva.Click += new System.EventHandler(this.btnDeletarReserva_Click);
             // 
@@ -189,7 +189,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Name = "ConsultarReserva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Consultar Reserva";
+            this.Text = "Administrar Reserva";
             ((System.ComponentModel.ISupportInitialize)(this.datagridReservas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

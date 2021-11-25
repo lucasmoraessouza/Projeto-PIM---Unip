@@ -20,7 +20,7 @@ namespace PIM_FINAL
 
         private void btnCadastroHospede_Click(object sender, EventArgs e)
         {
-            if(txbNome.Text == "" | txbNasc.Text == "" | txbCpf.Text == "" | txbEmail.Text == "" | txbCep.Text == "" | txbTelefone.Text == "")
+            if(txbNome.Text == "" | txbNasc.Text == "" | txbCpf.Text == null | txbEmail.Text == "" | txbCep.Text == "" | txbTelefone.Text == "")
             {
                 MessageBox.Show("ERRO! Preencha todos os campos.");
             }
@@ -41,6 +41,11 @@ namespace PIM_FINAL
         private void backToMenu(object obj)
         {
             Application.Run(new Menu());
+        }
+
+        private void txbCep_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

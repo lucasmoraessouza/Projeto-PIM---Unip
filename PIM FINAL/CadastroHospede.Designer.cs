@@ -136,7 +136,7 @@ namespace PIM_FINAL
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(225, 9);
+            this.label6.Location = new System.Drawing.Point(225, 10);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(341, 45);
             this.label6.TabIndex = 11;
@@ -148,7 +148,7 @@ namespace PIM_FINAL
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(701, 398);
+            this.button2.Location = new System.Drawing.Point(701, 401);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 28);
             this.button2.TabIndex = 8;
@@ -195,12 +195,13 @@ namespace PIM_FINAL
             // txbCep
             // 
             this.txbCep.Location = new System.Drawing.Point(165, 336);
-            this.txbCep.Mask = "00000-999";
+            this.txbCep.Mask = "00000-000";
             this.txbCep.MaximumSize = new System.Drawing.Size(182, 30);
             this.txbCep.MinimumSize = new System.Drawing.Size(182, 30);
             this.txbCep.Name = "txbCep";
             this.txbCep.Size = new System.Drawing.Size(182, 23);
             this.txbCep.TabIndex = 5;
+            this.txbCep.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txbCep_MaskInputRejected);
             // 
             // CadastroHospede
             // 

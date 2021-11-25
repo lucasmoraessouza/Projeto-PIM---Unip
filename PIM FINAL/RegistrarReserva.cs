@@ -17,6 +17,7 @@ namespace PIM_FINAL
         Reservas reservas = new Reservas();
         Hospedes hospede = new Hospedes();
         Quartos quartos = new Quartos();
+        float valorDiaria;
         float valorTotal;
 
         public RegistrarReserva()
@@ -32,7 +33,7 @@ namespace PIM_FINAL
 
         private void CalcularValorTotal()
         {
-            labelValorTotalReserva.Text = (datapickerSaida.Value.Subtract(datapickerEntrada.Value).Days * valorTotal).ToString();
+            valorTotal = ((datapickerSaida.Value.Subtract(datapickerEntrada.Value).Days * valorDiaria) + 100);
         }
 
         private void backToMenu(object obj)
@@ -75,6 +76,8 @@ namespace PIM_FINAL
             DateTime dateSaida = datapickerSaida.Value;
             DateTime dateEntrada = datapickerEntrada.Value;
 
+
+
             int dias = dateSaida.Subtract(dateEntrada).Days;
 
             if (dias < 1)
@@ -86,7 +89,7 @@ namespace PIM_FINAL
             }
             else
             {
-            reservas.RegistrarReserva(idHospedeSelecionado, comboBoxQuartos.Text, datapickerEntrada.Value, datapickerSaida.Value);
+            reservas.RegistrarReserva(idHospedeSelecionado, comboBoxQuartos.Text, datapickerEntrada.Value, datapickerSaida.Value, valorTotal);
             MessageBox.Show(reservas.mensagem);
             }
         }
@@ -109,11 +112,12 @@ namespace PIM_FINAL
             {
                 if (listarQuartos.Rows[i]["numeroQuarto"].ToString() == comboBoxQuartos.Text)
                 {
-                    valorTotal = float.Parse(listarQuartos.Rows[i]["valor"].ToString());
+                    valorDiaria = float.Parse(listarQuartos.Rows[i]["valor"].ToString());
                 }
             }
-            labelValorQuarto.Text = valorTotal.ToString();
-            CalcularValorTotal();
+            labelValorQuarto.Text = valorDiaria.ToString("C");
+             CalcularValorTotal();
+            labelValorTotalReserva.Text = valorTotal.ToString("C");
 
             btnReservar.Enabled = true;
         }
@@ -121,11 +125,18 @@ namespace PIM_FINAL
         private void datapickerEntrada_ValueChanged(object sender, EventArgs e)
         {
             CalcularValorTotal();
+            labelValorTotalReserva.Text = valorTotal.ToString("C");
         }
 
         private void datapickerSaida_ValueChanged(object sender, EventArgs e)
         {
             CalcularValorTotal();
+            labelValorTotalReserva.Text = valorTotal.ToString("C");
+        }
+
+        private void labelValorQuarto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

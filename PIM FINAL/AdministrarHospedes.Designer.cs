@@ -46,7 +46,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(222, 12);
+            this.label1.Location = new System.Drawing.Point(222, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(354, 45);
             this.label1.TabIndex = 0;
@@ -98,9 +98,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.button3.Location = new System.Drawing.Point(703, 402);
+            this.button3.Location = new System.Drawing.Point(701, 401);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 26);
+            this.button3.Size = new System.Drawing.Size(87, 28);
             this.button3.TabIndex = 7;
             this.button3.Text = "Voltar";
             this.button3.UseVisualStyleBackColor = false;
